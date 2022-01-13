@@ -1,3 +1,18 @@
+# v0.0.7 (Thu Jan 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- .npmrc ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- README.md ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- initial working version ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- Initial commit ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.6 (Thu Jan 13 2022)
 
 #### ⚠️ Pushed to `main`
