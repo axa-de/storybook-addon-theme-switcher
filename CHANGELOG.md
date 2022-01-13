@@ -1,3 +1,15 @@
+# v0.0.10 (Thu Jan 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- removed preview from preset ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.9 (Thu Jan 13 2022)
 
 #### ⚠️ Pushed to `main`
