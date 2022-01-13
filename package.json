@@ -1,6 +1,6 @@
 {
   "name": "@axa-de/storybook-addon-theme-switcher",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Storybook addon to switch theme",
   "keywords": [
     "storybook-addons",
@@ -78,7 +78,7 @@
     }
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "storybook": {
     "displayName": "Theme Switcher Addon",
