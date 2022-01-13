@@ -1,3 +1,20 @@
+# v0.0.8 (Thu Jan 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- correct scope ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- package.json ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- .npmrc ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- README.md ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- initial working version ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- Initial commit ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.7 (Thu Jan 13 2022)
 
 #### ⚠️ Pushed to `main`
