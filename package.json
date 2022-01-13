@@ -1,5 +1,5 @@
 {
-  "name": "storybook-addon-theme-switcher",
+  "name": "@axa/storybook-addon-theme-switcher",
   "version": "0.0.7",
   "description": "Storybook addon to switch theme",
   "keywords": [
