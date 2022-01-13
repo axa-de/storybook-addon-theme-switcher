@@ -1,3 +1,17 @@
+# v0.0.5 (Thu Jan 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- README.md ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- initial working version ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- Initial commit ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.1 (Thu Jan 13 2022)
 
 #### ⚠️ Pushed to `main`
