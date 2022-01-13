@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/christophrathvaltech/storybook-addon-theme-switcher"
+    "url": "git@github.com:axa-de/storybook-addon-theme-switcher.git"
   },
   "author": "christoph.rath@valtech.com",
   "license": "MIT",
