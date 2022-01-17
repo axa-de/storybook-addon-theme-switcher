@@ -1,64 +1,98 @@
 # Storybook Addon Theme Switcher
 
+Greatly inspired by [@storybook/storybook-addon-themes](https://storybook.js.org/addons/storybook-addon-themes).
 
-### Development scripts
+The tiny difference is, that you will NOT only have a class selector changed in your body html. You get a global theme id everywhere in your storybook, that can used as a theme-state to control your themes.
 
-- `yarn start` runs babel in watch mode and starts Storybook
-- `yarn build` build and package your addon code
+This Storybook Theme Decorator can be used to add a custom HTML class or classes to the preview in [Storybook](https://storybook.js.org).
 
-### Metadata
+![Demo](media/demo.gif)
 
-Storybook addons are listed in the [catalog](https://storybook.js.org/addons) and distributed via npm. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`. This project has been configured with sample data. Learn more about available options in the [Addon metadata docs](https://storybook.js.org/docs/react/addons/addon-catalog#addon-metadata).
+## Compatibility
 
-## Release Management
+This version is compatible with storybook version `6.0.x`.
 
-### Setup
-
-This project is configured to use [auto](https://github.com/intuit/auto) for release management. It generates a changelog and pushes it to both GitHub and npm. Therefore, you need to configure access to both:
-
-- [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens) Create a token with both _Read and Publish_ permissions.
-- [`GH_TOKEN`](https://github.com/settings/tokens) Create a token with the `repo` scope.
-
-Then open your `package.json` and edit the following fields:
-
-- `name`
-- `author`
-- `repository`
-
-#### Local
-
-To use `auto` locally create a `.env` file at the root of your project and add your tokens to it:
-
-```bash
-GH_TOKEN=<value you just got from GitHub>
-NPM_TOKEN=<value you just got from npm>
-```
-
-Lastly, **create labels on GitHub**. You’ll use these labels in the future when making changes to the package.
-
-```bash
-npx auto create-labels
-```
-
-If you check on GitHub, you’ll now see a set of labels that `auto` would like you to use. Use these to tag future pull requests.
-
-#### GitHub Actions
-
-This template comes with GitHub actions already set up to publish your addon anytime someone pushes to your repository.
-
-Go to `Settings > Secrets`, click `New repository secret`, and add your `NPM_TOKEN`.
-
-### Creating a release
-
-To create a release locally you can run the following command, otherwise the GitHub action will make the release for you.
+## Installation
 
 ```sh
-yarn release
+npm i -D @axa-de/storybook-addon-theme-switcher
 ```
 
-That will:
+## Getting started
 
-- Build and package the addon code
-- Bump the version
-- Push a release to GitHub and npm
-- Push a changelog to GitHub
+Then activate the addon by adding it to the storybook `main.js` file (located in the Storybook config directory):
+
+```jsx
+module.exports = {
+  addons: [
+    // Maybe other addons here...
+    'storybook-addon-theme-switcher'
+    // Or here...
+  ],
+};
+```
+
+See the [storybook documentation](https://storybook.js.org/docs/addons/using-addons/) for more informations.
+
+## Parameters
+
+The `themes` parameter accept an array of `Theme` object.
+
+Each `Theme` is an object with the following properties:
+
+* `name` (`string`): Name of the theme
+* `id` (`string`): ID of the theme
+
+The `themes` parameter also accept an object with the following properties:
+
+* `default` (`string` - optional): Name of theme selected by default
+* `themes` (`Theme[]` - required): The list of themes
+
+
+## Configuration
+
+### Globally
+
+You can configure the themes globally in the storybook `preview.js` file:
+
+```jsx
+export const parameters = {
+  themes : [
+      {name: "axa", id: "axa", default: true},
+      {name: "dbv", id: "dbv"},
+  ],
+  defaultThemeName : "axa",
+};
+```
+
+
+
+```jsx
+addParameters({
+  "storybook-theme-switcher": {
+    themes: [
+      { name:  "axa", id: "axa", default: true },
+      { name: "dbv", id: "dbv" },
+    ],
+    defaultThemeName: "axa",
+  },
+});
+```
+
+See the [storybook documentation](https://storybook.js.org/docs/addons/using-addons/#global-configuration) for more informations.
+
+### Usage with Decorators
+
+```jsx
+
+addDecorator((Story, context) => {
+  const { globals: { selectedThemeName } } = context;
+  return html`
+    <axa-theme theme=${selectedThemeName}>
+      ${Story()}
+    </axa-theme>
+  `
+});
+
+```
+

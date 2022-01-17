@@ -19,6 +19,8 @@
   "files": [
     "dist/**/*",
     "README.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
     "*.js",
     "*.d.ts"
   ],
