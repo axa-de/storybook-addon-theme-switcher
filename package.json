@@ -71,8 +71,7 @@
     "tar": "^6.1.9",
     "tmpl": "^1.0.5",
     "ansi-regex": "^5.0.1",
-    "nth-check": "^2.0.1",
-    "postcss": "^8.2.13"
+    "nth-check": "^2.0.1"
   },
   "peerDependencies": {
     "@storybook/addons": "^6.4.0",
