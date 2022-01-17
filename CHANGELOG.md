@@ -1,3 +1,15 @@
+# v0.0.11 (Mon Jan 17 2022)
+
+#### ⚠️ Pushed to `main`
+
+- doc: added documentation ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.10 (Thu Jan 13 2022)
 
 #### ⚠️ Pushed to `main`
