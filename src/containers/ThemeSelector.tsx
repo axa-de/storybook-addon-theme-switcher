@@ -16,8 +16,6 @@ export const ThemeSelector = () => {
         disable: false
     }
 
-    const themeConfiguration = useParameter<ThemeConfig>(THEME_PARAM_KEY, DEFAULT_THEME_CONFIG)
-
     const getThemeProps = (themes: Theme[], callback: () => void) => {
         return themes.map((item: Theme) => {
             return {
@@ -27,17 +25,21 @@ export const ThemeSelector = () => {
                     selectTheme(item.id)
                     callback()
                 },
-                active: item.id === selectedThemeName
+                active: item.id === selectedThemeId
             }
         })
     }
 
+    const themeConfiguration = useParameter<ThemeConfig>(THEME_PARAM_KEY, DEFAULT_THEME_CONFIG)
+
+    const selectedThemeId = selectedThemeName || themeConfiguration.defaultThemeName;
+
     const selectTheme = useCallback(
-        name =>
-            updateGlobals({
-                selectedThemeName: name
-            }),
-        [selectedThemeName]
+      name =>
+        updateGlobals({
+            selectedThemeName: name
+        }),
+      [selectedThemeId]
     )
 
     return (
@@ -57,7 +59,9 @@ export const ThemeSelector = () => {
         >
             <IconButton key="background" title="Change the background of the preview" active={false}>
                 <Icons icon="branch" />
+                <small>{selectedThemeId}</small>
             </IconButton>
+
         </WithTooltip>
     )
 }
