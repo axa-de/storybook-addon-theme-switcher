@@ -1,3 +1,16 @@
+# v0.0.13 (Mon Jan 17 2022)
+
+#### ⚠️ Pushed to `main`
+
+- fix: default value now will be bring the correct results ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- build: removed postcss 8 resolution, because it has sideeffects in storybook ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.12 (Mon Jan 17 2022)
 
 #### ⚠️ Pushed to `main`
