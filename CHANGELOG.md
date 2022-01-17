@@ -1,3 +1,15 @@
+# v0.0.12 (Mon Jan 17 2022)
+
+#### ⚠️ Pushed to `main`
+
+- security: found resolutions for vulnerabilities ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.11 (Mon Jan 17 2022)
 
 #### ⚠️ Pushed to `main`
