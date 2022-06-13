@@ -1,3 +1,22 @@
+# v0.0.14 (Mon Jun 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- bumped versions ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- bumped node-fetch 2.6.7 ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### 🔩 Dependency Updates
+
+- Bump prismjs from 1.26.0 to 1.28.0 [#2](https://github.com/axa-de/storybook-addon-theme-switcher/pull/2) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump minimist from 1.2.5 to 1.2.6 [#1](https://github.com/axa-de/storybook-addon-theme-switcher/pull/1) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.13 (Mon Jan 17 2022)
 
 #### ⚠️ Pushed to `main`
