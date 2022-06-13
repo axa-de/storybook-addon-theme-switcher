@@ -35,7 +35,7 @@ export const ThemeSelector = () => {
     const selectedThemeId = selectedThemeName || themeConfiguration.defaultThemeName;
 
     const selectTheme = useCallback(
-      name =>
+      (name: any) =>
         updateGlobals({
             selectedThemeName: name
         }),

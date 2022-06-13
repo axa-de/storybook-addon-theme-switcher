@@ -105,6 +105,9 @@
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
   "dependencies": {
-    "@axa-de/storybook-addon-theme-switcher": "^0.0.9"
+    "@axa-de/storybook-addon-theme-switcher": "^0.0.9",
+    "browserslist": "^4.16.5",
+    "immer": "^9.0.6",
+    "nth-check": "^2.0.1"
   }
 }
