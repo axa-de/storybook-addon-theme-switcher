@@ -48,34 +48,26 @@
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.13.0",
     "@storybook/addon-essentials": "^6.4.0",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.4.0",
     "auto": "^10.3.0",
     "babel-loader": "^8.1.0",
     "boxen": "^5.0.1",
+    "browserslist": "^4.16.5",
     "concurrently": "^6.2.0",
     "dedent": "^0.7.0",
+    "immer": "^9.0.6",
+    "nth-check": "^2.0.1",
     "prettier": "^2.3.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.2.4",
+    "webpack": "^5.0.0",
     "zx": "^1.14.1",
-    "browserslist": "^4.16.5",
-    "immer": "^9.0.6",
-    "nth-check": "^2.0.1"
-  },
-  "resolutions": {
-    "immer": "^9.0.6",
-    "trim": "^0.0.3",
-    "browserslist": "^4.16.5",
-    "glob-parent": "^5.1.2",
-    "prismjs": "^1.25.0",
-    "tar": "^6.1.9",
-    "tmpl": "^1.0.5",
-    "ansi-regex": "^5.0.1",
-    "nth-check": "^2.0.1",
-    "node-fetch": "^=2.6.7"
+    "lit": "^2.6.1"
   },
   "peerDependencies": {
     "@storybook/addons": "^6.4.0",
@@ -108,6 +100,8 @@
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
   "dependencies": {
-    "@axa-de/storybook-addon-theme-switcher": "^0.0.9"
+    "@axa-de/storybook-addon-theme-switcher": "^0.0.9",
+    "prismjs": "^1.25.0",
+    "tar": "^6.1.9"
   }
 }
