@@ -1,3 +1,19 @@
+# v0.0.15 (Tue Feb 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- release.yml ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- github action node version increased ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- removed self deps ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- added some patches to pass yarn audit ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- updated deps ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.14 (Mon Jun 13 2022)
 
 #### ⚠️ Pushed to `main`
