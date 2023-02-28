@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-        run: yarn install
+      - run: yarn install 
 
       - name: Create Release
         env:
