@@ -1,19 +1,36 @@
 import React, { memo, useCallback, useEffect } from "react";
-import { useGlobals, useStorybookApi } from "@storybook/manager-api";
-import { Icons, IconButton } from "@storybook/components";
-import { ADDON_ID, PARAM_KEY, TOOL_ID } from "./constants";
+import { useGlobals, useParameter, useStorybookApi } from "@storybook/manager-api";
+import { IconButton, Icons, TooltipLinkList, WithTooltip } from "@storybook/components";
+import { ADDON_ID, CONFIG, PARAM_KEY } from "./constants";
+import { Theme } from "./types";
 
 export const Tool = memo(function MyAddonSelector() {
   const [globals, updateGlobals] = useGlobals();
   const api = useStorybookApi();
 
-  const isActive = [true, "true"].includes(globals[PARAM_KEY]);
+  const selected = globals[PARAM_KEY] || 'axa';
 
-  const toggleMyTool = useCallback(() => {
+  const selectTheme = useCallback((name: string) => {
     updateGlobals({
-      [PARAM_KEY]: !isActive,
+      [PARAM_KEY]: name
     });
-  }, [isActive]);
+  }, [selected]);
+
+  const getThemeProps = (themes: Theme[], callback: () => void) => {
+    return themes.map((item: Theme) => {
+      return {
+        id: item.id,
+        title: item.name,
+        onClick: () => {
+          selectTheme(item.id);
+          callback();
+        },
+        active: item.id === selected
+      };
+    });
+  };
+
+
 
   useEffect(() => {
     api.setAddonShortcut(ADDON_ID, {
@@ -21,18 +38,31 @@ export const Tool = memo(function MyAddonSelector() {
       defaultShortcut: ["O"],
       actionName: "outline",
       showInMenu: false,
-      action: toggleMyTool,
+      action: selectTheme
     });
-  }, [toggleMyTool, api]);
+  }, [selectTheme, api]);
 
   return (
-    <IconButton
-      key={TOOL_ID}
-      active={isActive}
-      title="Enable my addon"
-      onClick={toggleMyTool}
+    <WithTooltip
+      placement="top"
+      trigger="click"
+      closeOnClick
+      tooltip={({ onHide }) => {
+        return (
+          <TooltipLinkList
+            links={getThemeProps(CONFIG.themes, () => {
+              onHide();
+            })}
+          />
+        );
+      }}
     >
-      <Icons icon="lightning" />
-    </IconButton>
+      <IconButton key="background" title="Change the background of the preview" active={false}>
+        <Icons icon="branch" />
+        <small>{selected}</small>
+      </IconButton>
+
+    </WithTooltip>
+
   );
 });

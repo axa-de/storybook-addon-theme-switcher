@@ -12,7 +12,7 @@ const meta: Meta<typeof Button> = {
   },
   tags: ["autodocs"],
   parameters: {
-    myAddonParameter: `
+    "storybook-theme-switcher": `
 <MyComponent boolProp scalarProp={1} complexProp={{ foo: 1, bar: '2' }}>
   <SomeOtherComponent funcProp={(a) => a.id} />
 </MyComponent>
