@@ -1,3 +1,15 @@
+# v0.0.16 (Fri Aug 18 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: fixed dependency conflict ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.15 (Tue Feb 28 2023)
 
 #### ⚠️ Pushed to `main`
