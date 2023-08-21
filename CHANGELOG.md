@@ -1,3 +1,18 @@
+# v0.0.18 (Mon Aug 21 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: merged package-json ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- Merge branch 'feature/storybook-7' ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- upgraded to sb 7.1 ([@christophrathvaltech](https://github.com/christophrathvaltech))
+- project setup ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+#### Authors: 1
+
+- Christoph Rath ([@christophrathvaltech](https://github.com/christophrathvaltech))
+
+---
+
 # v0.0.17 (Fri Aug 18 2023)
 
 #### ⚠️ Pushed to `main`
